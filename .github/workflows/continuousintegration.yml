@@ -17,4 +17,6 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
-        run: mvn clean install -f desafio-itau-spring-boot/pom.xml
+        run: |
+          cd desafio-itau-spring-boot
+          mvn clean install

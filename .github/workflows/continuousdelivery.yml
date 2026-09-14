@@ -19,7 +19,7 @@ jobs:
       - name: Simulando continuous delivery
         uses: actions/upload-artifact@v7
         with:
-          name: testecd.zip
+          name: teste.zip
           path: "**/*.java"
 
   deploy:
@@ -28,6 +28,6 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: testedeploy.zip
+          name: teste.zip
       - name: Display structure of download filas
         run: ls -R
